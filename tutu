@@ -1,0 +1,40 @@
+班级计划
+    {
+//程序分析第三个月开始，兔子每月数量=前两个月兔子数量之和。
+静态void Main(字符串[]参数)
+{
+int月份=0；//定义月份
+控制台.写入("输入月份：")；//提示输入需要计算几个月
+month=Convert.ToInt32(Console.ReadLine())；//读取输入的月份
+ 
+int temp1=1；//前2个月兔子数量.
+int temp2=1；//前1个月兔子数量
+ 
+for(int i=1；i<=month；i++)
+{
+if(i==1)
+{
+//第一个月兔子数量
+控制台.WriteLine("第"+i+"月兔子数量为：1")；
+}
+否则如果(i==2)
+{
+//第二个月兔子数量
+控制台.WriteLine("第"+i+"月兔子数量为：1")；
+}
+其他
+{
+//第三个月开始是前两个月之和
+int total=0；
+total=temp1+temp2；
+temp1=temp2；
+temp2=总计；
+Console.Write("第"+i+"月兔子数量为：")；
+console.WriteLine(总计)；
+}
+}
+控制台.ReadKey()；
+ 
+ 
+}
+    }
